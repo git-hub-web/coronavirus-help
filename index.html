@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare.Com</title>
+    <link rel="icon" href="HEALTHCARE.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            background-image: url(banner.jpg);
+            width: 100%;
+            overflow: hidden;
+            height: 100vh;
+            background-size: cover;
+        }
+        nav{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(124, 124, 124,0.3);
+        }
+        nav .logo{
+            font-size: 35px;
+            text-transform: capitalize;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 100px;
+            font-weight: bold;
+        }
+        .logo img{
+            width: 100px;
+            height: 50px;
+        }
+        ul{
+            list-style-type: none;
+            margin-right: 100px;
+        }
+        ul li{
+            display: inline-block;
+            margin-left: 20px;
+        }
+        li a{
+            text-decoration: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 17px;
+            color: rgb(0, 0, 0);
+            padding: 8px;
+            transition: 0.4s all;
+        }
+        a:hover{
+            background-image: linear-gradient(to right,rgb(76, 228, 190),rgb(50, 250, 250));
+            color: rgb(255, 42, 173);
+            border-radius: 5px;
+        }
+        .contant{
+            margin-left: 40%;
+            margin-top: 300px;
+        }
+        .contant .btn{
+            text-decoration: none;
+            margin-left: 60px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 8px;
+            border: 2px solid rgb(17, 255, 124);
+        }
+    /* Service on the site */
+        .one{
+            margin-top: 20px;
+            clear: both;
+            width: 90%;
+            margin: auto;
+            padding: 0;
+            height: 40vh;
+            display: grid;
+            text-align: center;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .one .item{
+            margin: 30px;
+            border: 1px solid gray;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .item:hover{
+            box-shadow: 2px 2px 3px 2px rgb(131, 131, 131);
+            border: none;
+        }
+        .item .fa-ambulance{
+            color: cadetblue;
+        }
+        .item .fa-stethoscope{
+            color: rgb(255, 17, 148);
+        }
+        .item .fa-user-md{
+            color: rgb(68, 202, 255);
+        }
+        .item .btn{
+            margin-top: 20px;
+            display: block;
+            text-decoration: none;
+            background-color: transparent;
+            border-radius: 10px;
+            color: #000;
+            padding: 8px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 2px solid gray;
+        }
+        .btn:hover{
+            transition: 0.4s linear;
+            background-color: rgb(82, 82, 82,0.5);
+            color: white;
+            border: none;
+        }
+       /* section two */
+       .two{
+           width: 90%;
+           height: 50vh;
+           margin: auto;
+           clear: both;
+           margin-top: 150px;
+           text-align: center;
+           padding: 0;
+           display: grid;
+           grid-template-columns: repeat(2,1fr);
+       }
+       .two img{
+           width: 350px;
+           height: 300px;
+           float: left;
+       }
+       .cont h1{
+           margin-top: 50px;
+           margin-left: -100px;
+       }
+       .cont p{
+        margin-left: -100px;
+        font-size: 17px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 10px;
+       }
+       .three{
+           clear: both;
+           box-sizing: border-box;
+           width: 90%;
+           margin: auto;
+           padding: 0;
+           height: 300px;
+           display: grid;
+           grid-template-columns: repeat(3,1fr);
+       }
+       .three .aboutus{
+           margin-top: 100px;
+           text-align: center;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+       .fotter{
+           text-align: center;
+           height: 50px;
+           background-color: rgb(0, 0, 0);
+           color: white;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+       .fotter p{
+        padding-top: 20px;
+       }
+    </style>
+</head>
+<body>
+<div class="main">
+
+        <nav>
+            <div class="logo"><img src="HEALTHCARE.png" alt=""></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Aboutus</a></li>
+                <li><a href="#">Contactus</a></li>
+            </ul>
+        </nav>
+        <div class="contant">
+            <a href="#" class="btn">Help Line</a>
+            <a href="#" class="btn">Service</a>
+        </div>
+    </div>
+<section class="one">
+    <div class="item">
+        <i class="fa fa-ambulance fa-4x"></i>
+        <h1>Ambulance</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, eveniet magnam consequuntur repellendus enim nisi! Minus numquam non neque unde.</p>
+        <a href="#" class="btn">Click Me</a>
+    </div>
+    <div class="item">
+        <i class="fa fa-stethoscope fa-4x"></i>
+        <h1>Stethoscope</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, eveniet magnam consequuntur repellendus enim nisi! Minus numquam non neque unde.</p>
+        <a href="#" class="btn">Click Me</a>
+    </div>
+    <div class="item">
+        <i class="fa fa-user-md fa-4x"></i>
+        <h1>User</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, eveniet magnam consequuntur repellendus enim nisi! Minus numquam non neque unde.</p>
+        <a href="#" class="btn">Click Me</a>
+    </div>
+</section>
+<section class="two">
+    <img src="problem.png" alt="">
+    <div class="cont">
+        <h1>CoronaViras 2020</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum suscipit hic voluptatibus sapiente! Perspiciatis repudiandae, explicabo blanditiis reiciendis nihil illo quia asperiores tenetur sapiente perferendis dicta tempore fugit vero quis facere quibusdam officia praesentium inventore aliquid autem minima in amet nesciunt. Tenetur totam temporibus omnis at harum dolore alias. Nesciunt incidunt odit sequi facere ipsum, nemo corrupti illo similique consequatur perferendis dolorum voluptates saepe et blanditiis commodi beatae autem dolor perspiciatis aliquam quis doloribus, officiis alias? Distinctio nemo inventore dolore esse. Eveniet, quam deserunt. Autem repellat illo magni quaerat necessitatibus praesentium reprehenderit similique eveniet inventore. Natus obcaecati et aut nam.</p>
+</div>
+</section>
+<section class="three">
+    <div class="aboutus">
+        <h1>California</h1>
+        <h3>Sanfansisco-98-Rode-Us</h3>
+        <h4>Phone: <i class="fa fa-phone"> +99 5635632</i></h4>
+        <h4>Email: <i class="fa fa-envelope"></i> @health.com</h4>
+        <h4>Fax: <i class="fa fa-fax"> +99 5635632</i></h4>
+        <h4>Email: <i class="fa fa-envelope"></i> @health.org</h4>
+    </div>
+    <div class="aboutus">
+        <h1>Florida</h1>
+        <h3>Sanfansisco-98-Rode-Us</h3>
+        <h4>Phone: <i class="fa fa-phone"> +99 5635632</i></h4>
+        <h4>Email: <i class="fa fa-envelope"></i> @health.com</h4>
+        <h4>Fax: <i class="fa fa-fax"> +99 5635632</i></h4>
+        <h4>Email: <i class="fa fa-envelope"></i> @health.org</h4>
+    </div>
+    <div class="aboutus">
+        <h1>Arizona</h1>
+        <h3>Sanfansisco-98-Rode-Us</h3>
+        <h4>Phone: <i class="fa fa-phone"> +99 5635632</i></h4>
+        <h4>Email: <i class="fa fa-envelope"></i> @health.com</h4>
+        <h4>Fax: <i class="fa fa-fax"> +99 5635632</i></h4>
+        <h4>Email: <i class="fa fa-envelope"></i> @health.org</h4>
+    </div>
+</section>
+<div class="fotter">
+    <p>&copy;Health.com-2020</p>
+</div>
+</body>
+</html>
